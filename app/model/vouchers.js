@@ -4,6 +4,8 @@ const DOCUMENT_NAME = 'vouchers';
 const COLLECTION_NAME = 'vouchers';
 
 const schema = mongoose.Schema({
+    name: String,
+    email: String,
     event_id: mongoose.Types.ObjectId,
     code: String
 }, {

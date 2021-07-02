@@ -5,6 +5,7 @@ const Inert = require('@hapi/inert');
 const Vision = require('@hapi/vision');
 const route = require('./route');
 require('./config/agenda');
+require('./config/queue');
 
 global.DB = require('./config/db');
 

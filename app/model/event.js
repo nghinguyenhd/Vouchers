@@ -11,7 +11,7 @@ const schema = mongoose.Schema({
     }
 }, {
     timestamps: true,
-    versionKey: false
+    optimisticConcurrency: true
 });
 
 const event = mongoose.model(DOCUMENT_NAME, schema, COLLECTION_NAME);
